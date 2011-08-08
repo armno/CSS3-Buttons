@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+		<title>ArmNo CSS3 Gradient Buttons Experiment</title>
+
+		<!-- Meta tags -->
+		<meta name="description" content="My first experiment on CSS3 gradient buttons" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Don't forget to update the bookmark icons (favicon.ico and apple-touch-icons) in the root: http://mathiasbynens.be/notes/touch-icons -->
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/main.css?version=1" />
+
+		<!-- JavaScript -->
+		<!--[if IE]><![endif]-->
+		<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="assets/js/respond.min.js"></script>
+		<style media="screen">
+			body {
+				margin: 0 auto;
+				padding-top: 40px;
+				width: 960px;
+			}
+			button {
+				font-family: Arial, Helvetica, sans-serif;
+				border: none;
+			}
+			
+			.button {
+				display: inline-block;
+				
+				padding: 0.5em 2em;
+				font-size: 14px;
+				font-weight: bold;
+				
+				border-radius: 0.2em;
+			}
+					
+			.pushed:active {
+				position: relative;
+				top: 1px;
+			}
+			
+			.green {
+				text-shadow: 0 1px 0 #9eff18;
+				box-shadow: 0 0 0 1px #72b908;
+				/* color*/
+				background: #7ed014;
+				background: -webkit-gradient(linear, left top, left bottom, from(#c0f22e), to(#57b909)); /* Saf4+, Chrome */
+				background: -webkit-linear-gradient(top, #c0f22e, #57b909); /* Chrome 10+, Saf5.1+ */
+				background:    -moz-linear-gradient(top, #c0f22e, #57b909); /* FF3.6 */
+				background:     -ms-linear-gradient(top, #c0f22e, #57b909); /* IE10 */
+				background:      -o-linear-gradient(top, #c0f22e, #57b909); /* Opera 11.10+ */
+				background:         linear-gradient(top, #c0f22e, #57b909);
+            	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#c0f22e', EndColorStr='#57b909'); /* IE6–IE9 */
+				
+				border-top: 1px solid #d0ff48;
+				color: #284d04;
+			}
+			
+			.green:hover {
+				background: #8be419;
+				background: -webkit-gradient(linear, left top, left bottom, from(#c4f82b), to(#70c82a)); /* Saf4+, Chrome */
+				background: -webkit-linear-gradient(top, #c4f82b, #70c82a); /* Chrome 10+, Saf5.1+ */
+				background:    -moz-linear-gradient(top, #c4f82b, #70c82a); /* FF3.6 */
+				background:     -ms-linear-gradient(top, #c4f82b, #70c82a); /* IE10 */
+				background:      -o-linear-gradient(top, #c4f82b, #70c82a); /* Opera 11.10+ */
+				background:         linear-gradient(top, #c4f82b, #70c82a);
+            	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#c4f82b', EndColorStr='#70c82a'); /* IE6–IE9 */
+			}
+			
+			.green:active {
+				box-shadow: inset 0 0 10px 0 #367b03,
+							0 0 0 1px #72b908;
+				background: #85d319;
+				border-top: 1px solid #449d02;
+			}
+			
+			.yellow {
+				text-shadow: 0 1px 0 #ffff13;
+				box-shadow: 0 0 0 1px #c1a109;
+				border-top: 1px solid #ffff3d;
+				color: #6b5803;
+				
+				/*gradient background*/
+				background: #f8d217;
+				background: -webkit-gradient(linear, left top, left bottom, from(#fbe333), to(#f2b507)); /* Saf4+, Chrome */
+				background: -webkit-linear-gradient(top, #fbe333, #f2b507); /* Chrome 10+, Saf5.1+ */
+				background:    -moz-linear-gradient(top, #fbe333, #f2b507); /* FF3.6 */
+				background:     -ms-linear-gradient(top, #fbe333, #f2b507); /* IE10 */
+				background:      -o-linear-gradient(top, #fbe333, #f2b507); /* Opera 11.10+ */
+				background:         linear-gradient(top, #fbe333, #f2b507);
+            	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fbe333', EndColorStr='#f2b507'); /* IE6–IE9 */
+
+			}
+			
+			.yellow:hover {
+				background: #fee362;
+				background: -webkit-gradient(linear, left top, left bottom, from(#ffee6e), to(#edbe38)); /* Saf4+, Chrome */
+				background: -webkit-linear-gradient(top, #ffee6e, #edbe38); /* Chrome 10+, Saf5.1+ */
+				background:    -moz-linear-gradient(top, #ffee6e, #edbe38); /* FF3.6 */
+				background:     -ms-linear-gradient(top, #ffee6e, #edbe38); /* IE10 */
+				background:      -o-linear-gradient(top, #ffee6e, #edbe38); /* Opera 11.10+ */
+				background:         linear-gradient(top, #ffee6e, #edbe38);
+            	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffee6e', EndColorStr='#edbe38'); /* IE6–IE9 */
+			}
+			
+			.yellow:active {
+				box-shadow: inset 0 0 10px 0 #f2b507,
+							0 0 0 1px #b79206;
+				background: #fee362;
+				border-top: 1px solid #e5b630;
+			}
+			
+			.dark {
+				color: #f9fbfd;
+				box-shadow: 0 0 0 1px #555962;
+				border-top: 1px solid #a7a9af;
+				text-shadow: 0 -1px 0 #55565b;
+				
+				background: #878991;
+				background: -webkit-gradient(linear, left top, left bottom, from(#989aa0), to(#787a82)); /* Saf4+, Chrome */
+				background: -webkit-linear-gradient(top, #989aa0, #787a82); /* Chrome 10+, Saf5.1+ */
+				background:    -moz-linear-gradient(top, #989aa0, #787a82); /* FF3.6 */
+				background:     -ms-linear-gradient(top, #989aa0, #787a82); /* IE10 */
+				background:      -o-linear-gradient(top, #989aa0, #787a82); /* Opera 11.10+ */
+				background:         linear-gradient(top, #989aa0, #787a82);
+            	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#989aa0', EndColorStr='#787a82'); /* IE6–IE9 */
+			}
+			.dark:hover {
+				color: #f9fbfd;
+				box-shadow: 0 0 0 1px #82868d;
+				border-top: 1px solid #c3c6ce;
+				text-shadow: 0 -1px 0 #4a4c50;
+				
+				background: #9a9da6;
+				background: -webkit-gradient(linear, left top, left bottom, from(#b3b7c1), to(#83868e)); /* Saf4+, Chrome */
+				background: -webkit-linear-gradient(top, #b3b7c1, #83868e); /* Chrome 10+, Saf5.1+ */
+				background:    -moz-linear-gradient(top, #b3b7c1, #83868e); /* FF3.6 */
+				background:     -ms-linear-gradient(top, #b3b7c1, #83868e); /* IE10 */
+				background:      -o-linear-gradient(top, #b3b7c1, #83868e); /* Opera 11.10+ */
+				background:         linear-gradient(top, #b3b7c1, #83868e);
+            	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3b7c1 	', EndColorStr='#83868e'); /* IE6–IE9 */
+			}
+			
+			.dark:active {
+				box-shadow: inset 0 0 10px 0 #5a5c65,
+							0 0 0 1px #82868d;
+				background: #868993;
+				border-top: 1px solid #6c6e78;
+			}
+			
+			
+			.light {
+				color: #7c868d;
+				box-shadow: 0 0 0 1px #c8c7c8,
+							0 1px 3px 0 #e5e5e5;
+				border-top: 1px solid #fff;
+				text-shadow: 0 1px 0 #f2f2f2;
+				
+				background: #f0f0f0;
+				background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#eaeaea)); /* Saf4+, Chrome */
+				background: -webkit-linear-gradient(top, #f9f9f9, #eaeaea); /* Chrome 10+, Saf5.1+ */
+				background:    -moz-linear-gradient(top, #f9f9f9, #eaeaea); /* FF3.6 */
+				background:     -ms-linear-gradient(top, #f9f9f9, #eaeaea); /* IE10 */
+				background:      -o-linear-gradient(top, #f9f9f9, #eaeaea); /* Opera 11.10+ */
+				background:         linear-gradient(top, #f9f9f9, #eaeaea);
+            	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f9f9f9', EndColorStr='#eaeaea'); /* IE6–IE9 */
+			}
+			.light:hover {
+				color: #7c868d;
+				box-shadow: 0 0 0 1px #c6c8c8,
+							0 1px 3px 0 #e5e5e5;
+				border-top: 1px solid #fff;
+				text-shadow: 0 1px 0 #f9f9f9;
+				
+				background: #f8f8f8;
+				background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f7f7f7)); /* Saf4+, Chrome */
+				background: -webkit-linear-gradient(top, #fefefe, #f7f7f7); /* Chrome 10+, Saf5.1+ */
+				background:    -moz-linear-gradient(top, #fefefe, #f7f7f7); /* FF3.6 */
+				background:     -ms-linear-gradient(top, #fefefe, #f7f7f7); /* IE10 */
+				background:      -o-linear-gradient(top, #fefefe, #f7f7f7); /* Opera 11.10+ */
+				background:         linear-gradient(top, #fefefe, #f7f7f7);
+            	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fefefe', EndColorStr='#f7f7f7'); /* IE6–IE9 */
+			}
+			
+			.light:active {
+				box-shadow: 0 0 0 1px #dfdfdf,
+							0 1px 3px 0 #e5e5e5;
+				background: #f3f2f1;
+				border-top: 1px solid #ededed;
+			}
+			.boxed {
+				color: #484e5b;
+				text-shadow: 0 1px 0 #efefef;
+				background: -webkit-linear-gradient(top, #fdfdfd, #f2f2f2 50%, #e6e6e6 50%, #eeeeee);
+				border: 1px solid #D6D9DB;
+				box-shadow: 0 2px 0 1px #8e969f,
+							0 2px 3px 0 #5f6366;
+			}
+			.boxed:hover {
+				color: #6f7788;
+				background: -webkit-linear-gradient(top, #fefefe, #f6f6f6 50%, #ececec 50%, #efefef);
+			}
+			.boxed:active {
+				background: #eeeeee;
+				position: relative;
+				top: 2px;
+				box-shadow: 0 1px 0 1px #8e969f,
+							0 1px 3px 0 #5f6366;
+			}
+			
+			section {
+				margin-top: 80px;
+				font-size: 13px;
+				color: #666;
+			}
+			section h2 {
+				font-size: 20px;
+				color: #333;
+			}
+		</style>
+		<script>
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-2721521-3']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+	</head>
+	<body>
+		<h1>CSS3 Buttons</h1>
+		<p>All credits go to the designers. - <em>ArmNo</em></p>
+		<button class="button green">Button</button>
+		<br />
+		<button class="button yellow">Button</button>
+		<br />
+		<button class="button dark">Button</button>
+		<br />
+		<button class="button light">Button</button>
+		<br />
+		<button class="button boxed">Button</button>
+		
+		<section>
+			<h2>Change logs</h2>
+			<ul>
+				<li>August 7, 2011 - Kick off with first 5 buttons.</li>
+			</ul>
+			<h2>Button Sources</h2>
+			<ul>
+				<li><a href="http://galp.in/blog/2011/08/02/the-ui-guide-part-1-buttons/">The UI Guide</a> for Green and Yellow buttons</li>
+				<li><a href="http://medialoot.com">MediaLoot</a> for Dark, Light, and 3-d buttons</li>
+			</ul>
+			<h2>CSS3 Techniques</h2>
+			<ul>
+				<li><a href="http://thatcoolguy.github.com/gridless-boilerplate/">Gridless</a>, boilerplate for this page</li>
+				<li><a href="http://css3please.com">CSS3 Please</a> for cross-browsers gradient syntax</li>
+				<li><a href="http://css-tricks.com/5700-css3-gradients/">Speed Up with CSS3 Gradients</a> for multiple gradient background technique</li>
+				<li><a href="http://sublimeorange.com/css/css3-inner-shadow/">CSS3 Inner Box Shadow</a> for the correct inner (inset) box shadow syntax</li>
+			</ul>
+		</section>
+	</body>
+</html>
